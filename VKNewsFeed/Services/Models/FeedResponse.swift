@@ -19,7 +19,7 @@ struct FeedResponse: Decodable {
 
 struct FeedItem: Decodable {
     let sourceId: Int
-    let postId: String
+    let postId: Int
     let text: String?
     let date: Double
     let comments: CountableItem?
