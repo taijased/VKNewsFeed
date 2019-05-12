@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		8AFED53A2288579600C72DB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED5392288579600C72DB9 /* AppDelegate.swift */; };
-		8AFED53C2288579600C72DB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED53B2288579600C72DB9 /* ViewController.swift */; };
-		8AFED53F2288579600C72DB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFED53D2288579600C72DB9 /* Main.storyboard */; };
 		8AFED5412288579800C72DB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AFED5402288579800C72DB9 /* Assets.xcassets */; };
 		8AFED5442288579800C72DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFED5422288579800C72DB9 /* LaunchScreen.storyboard */; };
+		8AFED54D22885F4A00C72DB9 /* VKSdkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFED54C22885F4A00C72DB9 /* VKSdkFramework.framework */; };
+		8AFED553228861E000C72DB9 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED552228861E000C72DB9 /* AuthService.swift */; };
+		8AFED555228863C000C72DB9 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED554228863C000C72DB9 /* AuthViewController.swift */; };
+		8AFED557228863DB00C72DB9 /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFED556228863DB00C72DB9 /* AuthViewController.storyboard */; };
+		8AFED55A22886BCF00C72DB9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED55922886BCF00C72DB9 /* FeedViewController.swift */; };
+		8AFED55C22886BE900C72DB9 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFED55B22886BE900C72DB9 /* FeedViewController.storyboard */; };
+		8AFED55F22886E6500C72DB9 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED55E22886E6500C72DB9 /* UIViewController + Storyboard.swift */; };
+		8AFED5622288708500C72DB9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED5612288708500C72DB9 /* NetworkService.swift */; };
+		8AFED5642288720000C72DB9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFED5632288720000C72DB9 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8AFED5362288579600C72DB9 /* VKNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFED5392288579600C72DB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AFED53B2288579600C72DB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AFED53E2288579600C72DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AFED5402288579800C72DB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AFED5432288579800C72DB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AFED5452288579800C72DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFED54C22885F4A00C72DB9 /* VKSdkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VKSdkFramework.framework; path = Carthage/Build/iOS/VKSdkFramework.framework; sourceTree = "<group>"; };
+		8AFED552228861E000C72DB9 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		8AFED554228863C000C72DB9 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		8AFED556228863DB00C72DB9 /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
+		8AFED55922886BCF00C72DB9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8AFED55B22886BE900C72DB9 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		8AFED55E22886E6500C72DB9 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		8AFED5612288708500C72DB9 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8AFED5632288720000C72DB9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFED54D22885F4A00C72DB9 /* VKSdkFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,7 @@
 			children = (
 				8AFED5382288579600C72DB9 /* VKNewsFeed */,
 				8AFED5372288579600C72DB9 /* Products */,
+				8AFED54B22885F4A00C72DB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +71,59 @@
 			isa = PBXGroup;
 			children = (
 				8AFED5392288579600C72DB9 /* AppDelegate.swift */,
-				8AFED53B2288579600C72DB9 /* ViewController.swift */,
-				8AFED53D2288579600C72DB9 /* Main.storyboard */,
+				8AFED558228863F000C72DB9 /* Auth */,
+				8AFED55D22886CC800C72DB9 /* Feed */,
+				8AFED551228861A700C72DB9 /* Services */,
+				8AFED56022886E7300C72DB9 /* Helpers */,
 				8AFED5402288579800C72DB9 /* Assets.xcassets */,
 				8AFED5422288579800C72DB9 /* LaunchScreen.storyboard */,
 				8AFED5452288579800C72DB9 /* Info.plist */,
 			);
 			path = VKNewsFeed;
+			sourceTree = "<group>";
+		};
+		8AFED54B22885F4A00C72DB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AFED54C22885F4A00C72DB9 /* VKSdkFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AFED551228861A700C72DB9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8AFED552228861E000C72DB9 /* AuthService.swift */,
+				8AFED5612288708500C72DB9 /* NetworkService.swift */,
+				8AFED5632288720000C72DB9 /* API.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8AFED558228863F000C72DB9 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8AFED554228863C000C72DB9 /* AuthViewController.swift */,
+				8AFED556228863DB00C72DB9 /* AuthViewController.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8AFED55D22886CC800C72DB9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				8AFED55922886BCF00C72DB9 /* FeedViewController.swift */,
+				8AFED55B22886BE900C72DB9 /* FeedViewController.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8AFED56022886E7300C72DB9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8AFED55E22886E6500C72DB9 /* UIViewController + Storyboard.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +136,7 @@
 				8AFED5322288579600C72DB9 /* Sources */,
 				8AFED5332288579600C72DB9 /* Frameworks */,
 				8AFED5342288579600C72DB9 /* Resources */,
+				8AFED54E22885F5C00C72DB9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -123,34 +186,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AFED5442288579800C72DB9 /* LaunchScreen.storyboard in Resources */,
+				8AFED557228863DB00C72DB9 /* AuthViewController.storyboard in Resources */,
 				8AFED5412288579800C72DB9 /* Assets.xcassets in Resources */,
-				8AFED53F2288579600C72DB9 /* Main.storyboard in Resources */,
+				8AFED55C22886BE900C72DB9 /* FeedViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AFED54E22885F5C00C72DB9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/VKSdkFramework.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8AFED5322288579600C72DB9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AFED53C2288579600C72DB9 /* ViewController.swift in Sources */,
+				8AFED553228861E000C72DB9 /* AuthService.swift in Sources */,
+				8AFED55F22886E6500C72DB9 /* UIViewController + Storyboard.swift in Sources */,
+				8AFED555228863C000C72DB9 /* AuthViewController.swift in Sources */,
+				8AFED55A22886BCF00C72DB9 /* FeedViewController.swift in Sources */,
+				8AFED5622288708500C72DB9 /* NetworkService.swift in Sources */,
 				8AFED53A2288579600C72DB9 /* AppDelegate.swift in Sources */,
+				8AFED5642288720000C72DB9 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8AFED53D2288579600C72DB9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AFED53E2288579600C72DB9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8AFED5422288579800C72DB9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,7 +365,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8F3CLJ592;
+				DEVELOPMENT_TEAM = 4226M9N553;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VKNewsFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +387,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C8F3CLJ592;
+				DEVELOPMENT_TEAM = 4226M9N553;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VKNewsFeed/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
