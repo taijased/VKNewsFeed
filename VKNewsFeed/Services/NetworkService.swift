@@ -23,13 +23,15 @@ final class NetworkService: Networking {
 
     func request(path: String, params: [String : String], completion: @escaping (Data?, Error?) -> Void) {
         guard let token = authService.token else { return }
+        
+        
         let params = ["filters": "post, photo"]
         var allParams = params
         allParams["access_token"] = token
         allParams["v"] = API.version
         
         let url = self.url(from: path, params: allParams)
-        let session = URLSession.init(configuration: .default)
+        print(url)
         let request = URLRequest(url: url)
         let task = createDataTask(from: request, completion: completion)
         task.resume()
