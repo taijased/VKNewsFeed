@@ -140,10 +140,10 @@
                 <outlet property="dateLabel" destination="UNM-bK-oHe" id="TOH-JM-aBE"/>
                 <outlet property="eyeLabel" destination="zSA-BV-fFH" id="wtK-xB-fUw"/>
                 <outlet property="iconImageView" destination="Dpf-bl-bM6" id="p9z-st-sjZ"/>
-                <outlet property="likeLabel" destination="6Sg-z0-1yj" id="57L-rN-4H2"/>
+                <outlet property="likesLabel" destination="6Sg-z0-1yj" id="57L-rN-4H2"/>
                 <outlet property="nameLabel" destination="B3G-17-vmQ" id="OaZ-9b-AO5"/>
                 <outlet property="postLabel" destination="yfL-7x-1dJ" id="Kah-BD-KtT"/>
-                <outlet property="shareLabel" destination="rqG-EC-H0D" id="im2-e2-XuE"/>
+                <outlet property="sharesLabel" destination="rqG-EC-H0D" id="im2-e2-XuE"/>
             </connections>
             <point key="canvasLocation" x="-127.2" y="179.91004497751126"/>
         </tableViewCell>
