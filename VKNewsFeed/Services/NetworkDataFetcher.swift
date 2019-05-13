@@ -43,25 +43,25 @@ struct NetworkDataFetcher: DataFetcher {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         
         guard
-            let data = from
-//            let response = try? decoder.decode(type.self, from: data)
+            let data = from,
+            let response = try? decoder.decode(type.self, from: data)
         else { return nil }
-        do {
-            let response = try decoder.decode(type.self, from: data)
-
-            print("response \(response)")
-        } catch DecodingError.dataCorrupted(let context) {
-            print(DecodingError.dataCorrupted(context))
-        } catch DecodingError.keyNotFound(let key, let context) {
-            print(DecodingError.keyNotFound(key,context))
-        } catch DecodingError.typeMismatch(let type, let context) {
-            print(DecodingError.typeMismatch(type,context))
-        } catch DecodingError.valueNotFound(let value, let context) {
-            print(DecodingError.valueNotFound(value,context))
-        } catch let error{
-            print(error)
-        }
+//        do {
+//            let response = try decoder.decode(type.self, from: data)
+//
+//            print("response \(response)")
+//        } catch DecodingError.dataCorrupted(let context) {
+//            print(DecodingError.dataCorrupted(context))
+//        } catch DecodingError.keyNotFound(let key, let context) {
+//            print(DecodingError.keyNotFound(key,context))
+//        } catch DecodingError.typeMismatch(let type, let context) {
+//            print(DecodingError.typeMismatch(type,context))
+//        } catch DecodingError.valueNotFound(let value, let context) {
+//            print(DecodingError.valueNotFound(value,context))
+//        } catch let error{
+//            print(error)
+//        }
         
-        return nil
+        return response
     }
 }
