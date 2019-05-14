@@ -13,6 +13,8 @@
 		8A260C85228ACA4C00840BB4 /* NewsfeedCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C84228ACA4C00840BB4 /* NewsfeedCodeCell.swift */; };
 		8A260C87228ACF7700840BB4 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C86228ACF7700840BB4 /* Constraints.swift */; };
 		8A260C89228ADC3C00840BB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C88228ADC3C00840BB4 /* Constants.swift */; };
+		8A260C8C228AF4A400840BB4 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C8B228AF4A400840BB4 /* GalleryCollectionView.swift */; };
+		8A260C8E228AF59500840BB4 /* GallaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C8D228AF59500840BB4 /* GallaryCollectionViewCell.swift */; };
 		8A557E482288BBED009A5CF1 /* NewsfeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A557E412288BBED009A5CF1 /* NewsfeedPresenter.swift */; };
 		8A557E492288BBED009A5CF1 /* NewsfeedWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A557E422288BBED009A5CF1 /* NewsfeedWorker.swift */; };
 		8A557E4A2288BBED009A5CF1 /* NewsfeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A557E432288BBED009A5CF1 /* NewsfeedRouter.swift */; };
@@ -43,6 +45,8 @@
 		8A260C84228ACA4C00840BB4 /* NewsfeedCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCodeCell.swift; sourceTree = "<group>"; };
 		8A260C86228ACF7700840BB4 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		8A260C88228ADC3C00840BB4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A260C8B228AF4A400840BB4 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
+		8A260C8D228AF59500840BB4 /* GallaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A557E412288BBED009A5CF1 /* NewsfeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedPresenter.swift; sourceTree = "<group>"; };
 		8A557E422288BBED009A5CF1 /* NewsfeedWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedWorker.swift; sourceTree = "<group>"; };
 		8A557E432288BBED009A5CF1 /* NewsfeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedRouter.swift; sourceTree = "<group>"; };
@@ -80,9 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A260C8A228AF48C00840BB4 /* GallaryView */ = {
+			isa = PBXGroup;
+			children = (
+				8A260C8B228AF4A400840BB4 /* GalleryCollectionView.swift */,
+				8A260C8D228AF59500840BB4 /* GallaryCollectionViewCell.swift */,
+			);
+			path = GallaryView;
+			sourceTree = "<group>";
+		};
 		8A557E302288B61B009A5CF1 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				8A260C8A228AF48C00840BB4 /* GallaryView */,
 				8A557E512288C0A2009A5CF1 /* Cell */,
 				8A557E4F2288BC15009A5CF1 /* NewsfeedViewController.storyboard */,
 				8A557E452288BBED009A5CF1 /* NewsfeedViewController.swift */,
@@ -285,10 +299,12 @@
 				8AFED56722887D4D00C72DB9 /* FeedResponse.swift in Sources */,
 				8A260C832289B05100840BB4 /* String + Height.swift in Sources */,
 				8A557E4C2288BBED009A5CF1 /* NewsfeedViewController.swift in Sources */,
+				8A260C8C228AF4A400840BB4 /* GalleryCollectionView.swift in Sources */,
 				8AFED553228861E000C72DB9 /* AuthService.swift in Sources */,
 				8AFED55F22886E6500C72DB9 /* UIViewController + Storyboard.swift in Sources */,
 				8A557E482288BBED009A5CF1 /* NewsfeedPresenter.swift in Sources */,
 				8AFED555228863C000C72DB9 /* AuthViewController.swift in Sources */,
+				8A260C8E228AF59500840BB4 /* GallaryCollectionViewCell.swift in Sources */,
 				8A557E4A2288BBED009A5CF1 /* NewsfeedRouter.swift in Sources */,
 				8AFED5622288708500C72DB9 /* NetworkService.swift in Sources */,
 				8A557E4B2288BBED009A5CF1 /* NewsfeedModels.swift in Sources */,
