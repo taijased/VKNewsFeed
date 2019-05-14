@@ -21,6 +21,7 @@ struct Constants {
     static let topViewHight: CGFloat = 36
     static let postLabelInsets = UIEdgeInsets(top: 8 + Constants.topViewHight + 8, left: 8, bottom: 8, right: 8)
     static let postLabelFont = UIFont.systemFont(ofSize: 15)
+    static let bottomViewHeight:  CGFloat = 44
 }
 
 protocol FeedCellLayoutCalculatorProtocol {
@@ -70,10 +71,18 @@ final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
             attachmentFrame.size = CGSize(width: cardViewWidth, height: cardViewWidth * ratio)
         }
         
+        // MARK: Работа с bottomViewFrame
+        
+        let bottomViewTop = max(postLabelFrame.maxY, attachmentFrame.maxY)
+        let bottomViewFrame = CGRect(origin: CGPoint(x: 0, y: bottomViewTop),
+                                     size: CGSize(width: cardViewWidth, height: Constants.bottomViewHeight))
+        // MARK: Работа с totlHeight
+        let totlHeight = bottomViewFrame.maxY + Constants.cardInsets.bottom
+        
         return Sizes(postLabelFrame: postLabelFrame,
                      attachementFrame: attachmentFrame,
                      bottomViewFrame: CGRect.zero,
-                     totalHeight: 600)
+                     totalHeight: totlHeight)
     }
     
     

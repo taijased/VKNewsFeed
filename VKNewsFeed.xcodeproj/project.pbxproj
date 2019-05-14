@@ -92,9 +92,9 @@
 		8A557E512288C0A2009A5CF1 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				8A557E542288C15C009A5CF1 /* NewsfeedCell.xib */,
 				8A557E522288C0BD009A5CF1 /* NewsfeedCell.swift */,
 				8A260C802289930D00840BB4 /* NewsfeedCellLayoutCalculator.swift */,
-				8A557E542288C15C009A5CF1 /* NewsfeedCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol FeedCellViewModel {
-    var iconUrlStrng: String { get }
+    var iconUrlString: String { get }
     var name: String { get }
     var date: String { get }
     var text: String? { get }
@@ -50,8 +50,10 @@ class NewsfeedCell: UITableViewCell {
             cardView.clipsToBounds = true
         }
     }
-    
     @IBOutlet weak var bottomView: UIView!
+    
+    
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var postLabel: UILabel!
@@ -73,7 +75,7 @@ class NewsfeedCell: UITableViewCell {
     }
     
     func set(viewModel: FeedCellViewModel) {
-        iconImageView.set(imageURL: viewModel.iconUrlStrng)
+        iconImageView.set(imageURL: viewModel.iconUrlString)
         nameLabel.text = viewModel.name
         dateLabel.text = viewModel.date
         postLabel.text = viewModel.text
@@ -85,7 +87,7 @@ class NewsfeedCell: UITableViewCell {
         
         postLabel.frame = viewModel.sizes.postLabelFrame
         postImageView.frame = viewModel.sizes.attachementFrame
-        //        bottomView.frame = viewModel.sizes.bottomViewFrame
+        bottomView.frame = viewModel.sizes.bottomViewFrame
         
         
         
