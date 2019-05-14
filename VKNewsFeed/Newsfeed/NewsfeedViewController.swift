@@ -12,7 +12,8 @@ protocol NewsfeedDisplayLogic: class {
     func displayData(viewModel: Newsfeed.Model.ViewModel.ViewModelData)
 }
 
-class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
+class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic , NewsfeedCodeCellDelegate{
+    
     
     private var feedViewModel = FeedViewModel.init(cells: [])
     var interactor: NewsfeedBusinessLogic?
@@ -68,6 +69,13 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
         }
     }
     
+    
+    // MARK: NewsfeedCodeCellDelegate
+    
+    func revealPost(for cell: NewsfeedCodeCell) {
+        
+    }
+    
 }
 
 
@@ -82,6 +90,7 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsfeedCodeCell.reuseId, for: indexPath) as! NewsfeedCodeCell
         let cellViewModel = feedViewModel.cells[indexPath.row]
         cell.set(viewModel: cellViewModel)
+        cell.delegate = self
         return cell
     }
     
