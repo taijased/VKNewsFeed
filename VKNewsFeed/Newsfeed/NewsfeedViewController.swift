@@ -73,11 +73,12 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic , NewsfeedC
     // MARK: NewsfeedCodeCellDelegate
     
     func revealPost(for cell: NewsfeedCodeCell) {
-        
+        guard let indexPath = table.indexPath(for: cell) else { return }
+        let cellViewModel = feedViewModel.cells[indexPath.row]
+        interactor?.makeRequest(request: Newsfeed.Model.Request.RequestType.revealPostIds(postId: cellViewModel.postId))
     }
     
 }
-
 
 extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -101,5 +102,9 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
         return cellViewModel.sizes.totalHeight
     }
     
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        let cellViewModel = feedViewModel.cells[indexPath.row]
+        return cellViewModel.sizes.totalHeight
+    }
     
 }
