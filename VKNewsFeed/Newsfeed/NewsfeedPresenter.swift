@@ -36,6 +36,9 @@ class NewsfeedPresenter: NewsfeedPresentationLogic {
             let feedViewModel = FeedViewModel.init(cells: cells )
             viewController?.displayData(viewModel: Newsfeed.Model.ViewModel.ViewModelData.displayNewsFeed(feedViewModel: feedViewModel))
             
+        case .presentUserInfo(let user):
+            let userViewModel = UserViewModel.init(photoUrlString: user?.photo100)
+            viewController?.displayData(viewModel: Newsfeed.Model.ViewModel.ViewModelData.displayUser(userViewModel: userViewModel))
         }
     }
     
@@ -54,17 +57,32 @@ class NewsfeedPresenter: NewsfeedPresentationLogic {
         
         let sizes = cellLayoutCalculator.sizes(postText: feedItem.text, photoAttachements: photoAttachements, isFullSizedPost: isFullSized)
         
+        let postText = feedItem.text?.replacingOccurrences(of: "<br>", with: "\n")
+        
+        
         return FeedViewModel.Cell.init(postId: feedItem.postId,
                                        iconUrlString: profile.photo,
                                        name: profile.name,
                                        date: dateTitle,
-                                       text: feedItem.text,
-                                       likes: String(feedItem.likes?.count ?? 0),
-                                       comments: String(feedItem.comments?.count ?? 0),
-                                       shares: String(feedItem.reposts?.count ?? 0),
-                                       views: String(feedItem.views?.count ?? 0),
+                                       text: postText,
+                                       likes: formmattedCouner(feedItem.likes?.count),
+                                       comments: formmattedCouner(feedItem.comments?.count),
+                                       shares: formmattedCouner(feedItem.reposts?.count),
+                                       views: formmattedCouner(feedItem.views?.count),
                                        photoAttachements: photoAttachements,
                                        sizes: sizes)
+    }
+    
+    private func formmattedCouner(_ counter: Int?) -> String? {
+        guard let counter = counter, counter > 0 else { return nil }
+        var counterString = String(counter)
+        if 4...5 ~= counterString.count {
+            counterString = String(counterString.dropLast(3) + "K")
+        } else if counterString.count > 6 {
+            counterString = String(counterString.dropLast(6) + "M")
+        }
+        
+        return counterString
     }
     
     private func profile(for sourceId: Int, profiles: [Profile], groups: [Group]) -> ProfileRepresentable {

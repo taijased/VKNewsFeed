@@ -16,6 +16,9 @@
 		8A260C8C228AF4A400840BB4 /* GalleryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C8B228AF4A400840BB4 /* GalleryCollectionView.swift */; };
 		8A260C8E228AF59500840BB4 /* GallaryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C8D228AF59500840BB4 /* GallaryCollectionViewCell.swift */; };
 		8A260C90228AFFA000840BB4 /* Rowlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C8F228AFFA000840BB4 /* Rowlayout.swift */; };
+		8A260C93228C1A0900840BB4 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C92228C1A0900840BB4 /* TitleView.swift */; };
+		8A260C95228C28EF00840BB4 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C94228C28EF00840BB4 /* UserResponse.swift */; };
+		8A260C97228C2D4400840BB4 /* InsetableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A260C96228C2D4400840BB4 /* InsetableTextField.swift */; };
 		8A557E482288BBED009A5CF1 /* NewsfeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A557E412288BBED009A5CF1 /* NewsfeedPresenter.swift */; };
 		8A557E492288BBED009A5CF1 /* NewsfeedWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A557E422288BBED009A5CF1 /* NewsfeedWorker.swift */; };
 		8A557E4A2288BBED009A5CF1 /* NewsfeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A557E432288BBED009A5CF1 /* NewsfeedRouter.swift */; };
@@ -49,6 +52,9 @@
 		8A260C8B228AF4A400840BB4 /* GalleryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionView.swift; sourceTree = "<group>"; };
 		8A260C8D228AF59500840BB4 /* GallaryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8A260C8F228AFFA000840BB4 /* Rowlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rowlayout.swift; sourceTree = "<group>"; };
+		8A260C92228C1A0900840BB4 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		8A260C94228C28EF00840BB4 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		8A260C96228C2D4400840BB4 /* InsetableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetableTextField.swift; sourceTree = "<group>"; };
 		8A557E412288BBED009A5CF1 /* NewsfeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedPresenter.swift; sourceTree = "<group>"; };
 		8A557E422288BBED009A5CF1 /* NewsfeedWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedWorker.swift; sourceTree = "<group>"; };
 		8A557E432288BBED009A5CF1 /* NewsfeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedRouter.swift; sourceTree = "<group>"; };
@@ -96,9 +102,19 @@
 			path = GallaryView;
 			sourceTree = "<group>";
 		};
+		8A260C91228C198100840BB4 /* TitleVIew */ = {
+			isa = PBXGroup;
+			children = (
+				8A260C92228C1A0900840BB4 /* TitleView.swift */,
+				8A260C96228C2D4400840BB4 /* InsetableTextField.swift */,
+			);
+			path = TitleVIew;
+			sourceTree = "<group>";
+		};
 		8A557E302288B61B009A5CF1 /* Newsfeed */ = {
 			isa = PBXGroup;
 			children = (
+				8A260C91228C198100840BB4 /* TitleVIew */,
 				8A260C8A228AF48C00840BB4 /* GallaryView */,
 				8A557E512288C0A2009A5CF1 /* Cell */,
 				8A557E4F2288BC15009A5CF1 /* NewsfeedViewController.storyboard */,
@@ -200,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				8AFED56622887D4D00C72DB9 /* FeedResponse.swift */,
+				8A260C94228C28EF00840BB4 /* UserResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,7 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A260C97228C2D4400840BB4 /* InsetableTextField.swift in Sources */,
 				8A260C90228AFFA000840BB4 /* Rowlayout.swift in Sources */,
+				8A260C95228C28EF00840BB4 /* UserResponse.swift in Sources */,
 				8AFED56722887D4D00C72DB9 /* FeedResponse.swift in Sources */,
 				8A260C832289B05100840BB4 /* String + Height.swift in Sources */,
 				8A557E4C2288BBED009A5CF1 /* NewsfeedViewController.swift in Sources */,
@@ -313,6 +332,7 @@
 				8AFED5622288708500C72DB9 /* NetworkService.swift in Sources */,
 				8A557E4B2288BBED009A5CF1 /* NewsfeedModels.swift in Sources */,
 				8A260C812289930D00840BB4 /* NewsfeedCellLayoutCalculator.swift in Sources */,
+				8A260C93228C1A0900840BB4 /* TitleView.swift in Sources */,
 				8A260C89228ADC3C00840BB4 /* Constants.swift in Sources */,
 				8A260C85228ACA4C00840BB4 /* NewsfeedCodeCell.swift in Sources */,
 				8A260C87228ACF7700840BB4 /* Constraints.swift in Sources */,
